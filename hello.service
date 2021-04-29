@@ -1,0 +1,11 @@
+[Unit]
+Description=Hello World
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/startHello.sh
+ExecStop=/usr/local/bin/stopHello.sh
+
+[Install]
+WantedBy=multi-user.target
